@@ -1,2 +1,5 @@
 # POLYPHONIC-SOUND-EVENT-AND-SOUND-ACTIVITY-DETECTION
 POLYPHONIC SOUND EVENT AND SOUND ACTIVITY DETECTION:A MULTI-TASK APPROACH
+
+
+Current polyphonic SED systemsfail to model the temporal structure of sound events explicitly andinstead attempt to look at which sound events are present at eachaudio frame.  Consequently, the event-wise detection performanceis much lower than the segment-wise detection performance. In thiswork, we propose a joint model approach to improve the temporallocalization of sound events using a multi-task learning setup.  Thefirst task predicts which sound events are present at each time frame;we call this branch ‘Sound Event Detection (SED) model’, while thesecond task predicts if a sound event is present or not at each frame;we call this branch ‘Sound Activity Detection (SAD) model’.  Weverify the proposed joint model by comparing it with a separate im-plementation of both tasks aggregated together from individual taskpredictions.   Our  experiments  on  the  URBAN-SED  dataset  showthat the proposed joint model can alleviate False Positive (FP) andFalse Negative (FN) errors and improve both the segment-wise andthe event-wise metrics.
