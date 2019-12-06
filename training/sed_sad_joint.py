@@ -23,7 +23,8 @@ epochs = 200
 batch_size =  32
 nb_classes = 10
 lr = 0.001
-
+sed_loss_weight = 0.5
+sad_loss_weight = 0.5
 
 def sed_sad_agg(rows,cols,channels,nb_classes,lr,sed_loss_weight,sad_loss_weight):
 
@@ -95,7 +96,7 @@ def sed_sad_agg(rows,cols,channels,nb_classes,lr,sed_loss_weight,sad_loss_weight
 	return model
 ################################################################################################
 
-sed_sad_agg = sed_sad_agg(rows,cols,channels,nb_classes,lr)
+sed_sad_agg = sed_sad_agg(rows,cols,channels,nb_classes,lr,sed_loss_weight,sad_loss_weight)
 
 
 # feature and label
